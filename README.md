@@ -32,3 +32,10 @@ This project is a simple task manager application with user authentication featu
 
    ```bash
    git clone https://github.com/your-username/task-manager.git
+
+
+
+Additionally, if you have specific API documentation, you can include it in a separate `docs` directory and reference it in the README. Similarly, if you have multiple contributors, you can list them accordingly.
+
+Feel free to adjust and expand upon this template based on your project's specific requirements and needs.
+
