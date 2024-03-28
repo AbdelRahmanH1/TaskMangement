@@ -34,6 +34,20 @@ This project is a simple task manager application with user authentication featu
    git clone https://github.com/your-username/task-manager.git
 
 
+## API Documentation
+
+| Endpoint                  | Method | Description                     |
+|---------------------------|--------|---------------------------------|
+| /api/register             | POST   | Register a new user            |
+| /api/login                | POST   | Log in an existing user        |
+| /api/verify-email/:token  | GET    | Verify email using token       |
+| /api/tasks                | GET    | Get all tasks for the user     |
+| /api/tasks/:id            | GET    | Get a specific task by ID      |
+| /api/tasks                | POST   | Create a new task              |
+| /api/tasks/:id            | PUT    | Update an existing task        |
+| /api/tasks/:id            | DELETE | Delete an existing task        |
+| /api/upload-profile-pic   | POST   | Upload profile picture         |
+| /api/reset-password       | POST   | Reset password for a user      |
 
 Additionally, if you have specific API documentation, you can include it in a separate `docs` directory and reference it in the README. Similarly, if you have multiple contributors, you can list them accordingly.
 
