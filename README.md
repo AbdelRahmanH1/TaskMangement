@@ -38,16 +38,22 @@ This project is a simple task manager application with user authentication featu
 
 | Endpoint                  | Method | Description                     |
 |---------------------------|--------|---------------------------------|
-| /api/register             | POST   | Register a new user            |
-| /api/login                | POST   | Log in an existing user        |
-| /api/verify-email/:token  | GET    | Verify email using token       |
-| /api/tasks                | GET    | Get all tasks for the user     |
-| /api/tasks/:id            | GET    | Get a specific task by ID      |
-| /api/tasks                | POST   | Create a new task              |
-| /api/tasks/:id            | PUT    | Update an existing task        |
-| /api/tasks/:id            | DELETE | Delete an existing task        |
-| /api/upload-profile-pic   | POST   | Upload profile picture         |
-| /api/reset-password       | POST   | Reset password for a user      |
+| /users/signup             | POST   | Register a new user            |
+| /users/login              | POST   | Log in an existing user        |
+| /users/verify/:token      | GET    | Verify email using token       |
+| /users//forget_password   | POST   | Send forget code on mail       |
+| /users/reset_password     | POST   | Reset the password             |
+| /users/add_photo          | POST   | add a new Photo                |
+| /users/delete_photo       | DELETE | Delete pic                     |
+| /users//update_photo/     | DELETE | update the pic                 |
+| /users/qr                 | get    | get the qrcode of profile      |
+| /task/add                 | POST   | add new task                   |
+| /task/delete/:id          | DELETE | Delete Task                    |
+| /task/update/:id          | PATCH  | Update Task                    |
+| /task/done/:id            | PATCH  | make task done                 |
+| /task/getall              | GET    | Get all Tasks                  |
+| /task/complete            | GET    | Get all Task Completed         |
+| /task/uncomplete            | GET    | Get all Task unCompleted     |
 
 Additionally, if you have specific API documentation, you can include it in a separate `docs` directory and reference it in the README. Similarly, if you have multiple contributors, you can list them accordingly.
 
