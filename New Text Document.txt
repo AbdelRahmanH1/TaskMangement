@@ -1,0 +1,24 @@
+Project Idea: Task Manager with User Authentication
+
+1)User Authentication:
+  -Implement user registration with hashed password storage using bcrypt.(Done)
+  -Implement user login with JWT token generation upon successful authentication.(Done)
+  -Use middleware to protect routes that require authentication.(Done)
+
+2)Email Verification:
+  -Upon user registration, send a verification email with a link containing a unique token(Done).  
+  -Create an endpoint to handle email verification based on the received token.(Done)
+
+3)Task Management:
+   -Create a simple task model with properties like title, description, and completed.
+   -Implement CRUD (Create, Read, Update, Delete) operations for tasks.
+   -Secure the task routes, allowing only authenticated users to manage their tasks.
+
+4)File Upload:
+  -Implement a profile picture upload feature using Multer.
+  -Associate the uploaded image with the user's profile.
+
+5)Additional Features:
+   -Implement password reset functionality through email for users who forget their passwords.(Done)
+   -Include validation for user inputs using a library like Joi.(Done)
+   -Add error handling middleware to improve the robustness of your application.(Done)
